@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ex003 - Imagens dinamicas, audios e videos</h1>
+
+    <h2>Imagem dinamica</h2>
+        <picture>
+            <source media="(max-width: 750px)" srcset="image/imagem-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="image/imagem-m.png" type="image/png">
+            <img src="image/imagem-g.png" alt="imagem grande">
+        </picture>
+
+    <h2>Áudios</h2>
+        <audio preload="auto" controls>
+            <source src="music/courtesy-call.wav" type="audio/wav">
+            <source src="music/courtesy-call.ogg" type="audio/ogg">
+            <source src="music/courtesy-call.mp3" type="audio/mpeg">
+            <p>Infelizmente seu navegador não é compativel para reproduzir esse áudio, <a href="music/courtesy-call.mp3" download="courtesy-call.mp3" type="audio/mpeg">Clique aqui para o download</a></p>
+        </audio>
+
+    <h2>Videos locais e de sites externos</h2>
+        <h3>Externo</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ul3ANlwN6u8?si=rg-doC60PgSHmtt3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3>Video local</h3>
+            <video width="560px" preload="auto" autoplay controls>
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+            </video>
+</body>
+</html>
