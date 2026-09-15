@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando iframes</h1>
+    <p>Testando o iframe com o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe></p>
+
+    <h2>Testando iframes do repositorio local e abrindo links dentro do iframe</h2>
+
+    <ul>
+        <li><a href="iframe/pag001.html" target="frame">Pagina 1</a></li>
+        <li><a href="iframe/pag002.html" target="frame">Pagina 2</a></li>
+        <li><a href="iframe/pag003.html" target="frame">Pagina 3</a></li>
+    </ul>
+
+    <iframe src="" name="frame" frameborder="1" srcdoc="<h1>Escolha um dos links acima</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam provident dolorem voluptatibus, debitis eligendi fugit quaerat quam tempore impedit delectus, accusamus incidunt, soluta nobis molestiae. Architecto, distinctio magnam. Necessitatibus? <img src="../" alt=""> </p> "</iframe></iframe>></iframe>
+
+    <h2>Deixando um iframe mais seguro</h2>
+
+    <iframe src="iframe/pag001.html" frameborder="0" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+</body>
+</html>
