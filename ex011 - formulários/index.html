@@ -13,50 +13,69 @@
 <body>
     <h1>Formulários</h1>
     <form autocomplete="off" method="get" autocomplete="on">
-            <p>
-                <label for="inome">Nome:</label>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" autocomplete="on" minlength="3" maxlength="7" placeholder="Nome do usuário" size="10">
+                </p>
+                
+                        <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" autocomplete="on" minlength="3" maxlength="7" placeholder="Sobrenome do usuário" size="12">
+                        </p>
+                
+                        <input type="submit">
+                        <input type="reset">
+                
+                        <p>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" autocomplete="current-password">
+                        </p>
+                
+                        <p>
+                <label for="imedia">Media</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.5" placeholder="0 a 10" value="5" required>
+                        </p>
+                
+                        <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="month" name="mes" id="imes" value="2020-07">
+                        </p>
+                
+                        <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata">
+                        </p>
+                
+                        <p>
+                <label for="ihora"></label>
+                <input type="time" name="hora" id="ihora">
+                        </p>
+                
+                        <p>
+                <label for="iemail">email</label>
+                <input type="email" autocomplete="email" name="email" id="iemail">
+                        </p>
+                        <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" autocomplete="tel" name="tel" id="itel" required>
+                        </p>
+            </fieldset>
+    </form>
 
-                <input type="text" name="nome" id="inome" autocomplete="on" minlength="3" maxlength="7" placeholder="Nome do usuário" size="10">
-            </p>
+    <form>
+        <fieldset>
+            <legend>Checkbox e radio</legend>
 
-        <p>
-            <label for="isobrenome">Sobrenome:</label>
+            <input type="radio" name="sexo" id="mas"><label for="mas">Masculino</label>
+            <input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label><br><br>
 
-            <input type="text" name="sobrenome" id="isobrenome" autocomplete="on" minlength="3" maxlength="7" placeholder="Sobrenome do usuário" size="12">
-        </p>
-
-        <input type="submit">
-        <input type="reset">
-
-        <p>
-            <label for="isenha">Senha</label>
-
-            <input type="password" name="senha" id="isenha" autocomplete="current-password">
-        </p>
-
-        <p>
-            <label for="imedia">Media</label>
-
-            <input type="number" name="media" id="imedia" min="0" max="10" step="0.5" placeholder="0 a 10" value="5" required>
-        </p>
-
-        <p>
-            <label for="imes">Periodo Letivo</label>
-
-            <input type="month" name="mes" id="imes" value="2020-07">
-        </p>
-
-        <p>
-            <label for="idata">Data</label>
-
-            <input type="date" name="data" id="idata">
-        </p>
-
-        <p>
-            <label for="ihora"></label>
-
-            <input type="time" name="hora" id="ihora">
-        </p>
+            <input type="checkbox" name="esfut" id="ifut" checked><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="esbas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="esvol" id="ivo" checked><label for="ivol">Volei</label><br>
+            <input type="checkbox" name="esten" id="iten"><label for="iten">Têns</label><br>
+        </fieldset>
     </form>
 </body>
 </html>
